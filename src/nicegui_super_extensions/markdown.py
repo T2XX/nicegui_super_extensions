@@ -26,14 +26,11 @@ def initMarkdownPreViewerDependence():
     )
 
 
-class MarkdownPreViewer(ui.element):
+class MarkdownPreViewer(ui.html):
 
     def __init__(self):
         super().__init__()
-        preview = ui.html("")
-        id = "preview" + str(preview.id)
-        self.preview_id = id
-        preview.set_content(f"""<div id="{id}" class="w-full"></div>""")
+        self.content = f"""<div id="{self.id}"></div>"""
 
     def render(
         self,
@@ -50,7 +47,7 @@ class MarkdownPreViewer(ui.element):
         cdn(optional): use which cdn to load the vditor
         more to see: https://ld246.com/article/1549638745630#options-preview
         """
-        select_div = f'const el = document.getElementById("{self.preview_id}");\n'
+        select_div = f'const el = document.getElementById("{self.id}");\n'
         rebuild = (
             f"markdown=decodeURIComponent(escape(atob('{ encode_string(markdown) }')));"
         )
