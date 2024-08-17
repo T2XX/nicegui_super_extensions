@@ -5,7 +5,7 @@ provide extension features for Nicegui
 <a title="MIT" target="_blank" href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square"></a>
 
 <p align="center">
-<a href="https://github.com/T2XX/nicegui_super_extensions/blob/main/README.md">English</a>  |  <a href="https://github.com/T2XX/nicegui_super_extensions/blob/main/README_zh_CN">简体中文</a>
+<a href="https://github.com/T2XX/nicegui_super_extensions/blob/main/README.md">English</a>  |  <a href="https://github.com/T2XX/nicegui_super_extensions/blob/main/README_zh_CN.md">简体中文</a>
 </p>
 
 # extensions
@@ -67,7 +67,7 @@ set_reconnect_box()
 app.on_connect(lambda: set_reconnect_box())
 ```
 
-### [reorderable](https://github.com/T2XX/nicegui_super_extensions/blob/main/src/nicegui_super_extensions/draggable.py)
+### [reorderable](https://github.com/T2XX/nicegui_super_extensions/blob/main/src/nicegui_super_extensions/reorderable.py)
 
 let an item reorderable in row or column
 
