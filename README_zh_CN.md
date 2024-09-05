@@ -25,7 +25,7 @@ pip install nicegui_super_extensions
 1. 第一步，在页面加载成功前导入依赖
 
 ```python
-from nicegui_super_extensions.markdown import (
+from nicegui_super_extensions.markdown_renderer import (
     MarkdownPreViewer,
     initMarkdownPreViewerDependence,
 )

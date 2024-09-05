@@ -21,8 +21,9 @@ def encode_string(string):
 def initMarkdownPreViewerDependence():
     """load  Dependence in page, !YOU NEED LOAD BEFORE PAGE FIRST LOAD!"""
     ui.add_head_html(
-        """<link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" />
-<script src="https://unpkg.com/vditor/dist/index.min.js"></script>"""
+        """<link rel="prefetch" href="https://cdn.jsdelivr.net/npm/vditor/dist/js/lute/lute.min.js" />
+        <link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" />
+        <script rel="preload" src="https://unpkg.com/vditor/dist/index.min.js"></script>"""
     )
 
 

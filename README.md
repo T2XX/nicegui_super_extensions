@@ -25,7 +25,7 @@ pip install nicegui_super_extensions
 1. step 1, load Dependence before page require
 
 ```python
-from nicegui_super_extensions.markdown import MarkdownPreViewer, initMarkdownPreViewerDependence
+from nicegui_super_extensions.markdown_renderer import MarkdownPreViewer, initMarkdownPreViewerDependence
 initMarkdownPreViewerDependence()
 ```
 

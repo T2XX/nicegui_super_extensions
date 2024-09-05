@@ -2,9 +2,10 @@ import asyncio
 from nicegui import app, ui
 import sys
 import os
+
 sys.path.append(os.getcwd())
 from src.nicegui_super_extensions.reconnect_box import set_reconnect_box
-from src.nicegui_super_extensions.markdown import (
+from nicegui_super_extensions.markdown_renderer import (
     MarkdownPreViewer,
     initMarkdownPreViewerDependence,
 )
